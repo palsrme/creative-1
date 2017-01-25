@@ -1,19 +1,125 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset = "utf-" />
+    <title>UKRAINE TRIP</title>
 <head>
-<title>UKRAINE TRIP 2017</title>
-<meta charset+"UTF-8">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#datepicker").datepicker();});
+</script>
+
 <style>
-h1 { font-size: 48pt; text-align: center; background-color: yellow;  } 
+h1 { font-size: 48pt; text-align: center; background-color: yellow;  }
 select {margin-left: 20px;}
-div { margin: 30px 100px; }
+.firstDiv img {
+position: absolute;
+top: 0;
+left: 0;
+height: 140%;
+width: 100%;
+z-index: -1;
+opacity: 0.5;
+}
+#sunflower{
+  display: block;
+  margin: auto;
+  height: 250px;
+  margin-top: 40px;
+  border: groove;
+  border-color: rgb(224, 227, 209);
+  border-width: 10px;
+  border-radius: 5px;
+}
+.date{
+  position: relative;
+  margin-left: 30%;
+  margin-top: 30px;
+  display: inline-block;
+  float: left;
+  font-size: 25pt;
+}
+#datepicker{
+  float: left;
+  margin-left: 50px;
+  margin-top: 25px;
+  display: inline-block;
+}
+.dropdown{
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-top: 90px;
+  margin-left: -63px;
+}
+.activities{
+  position: relative;
+  margin-left: -370px;
+  margin-top: 80px;
+  display: inline-block;
+  font-size: 25pt;
+  margin-bottom: 0px;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#map{
+  position: relative;
+  display: block;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.people{
+  margin: auto;
+  width: 40%;
+  font-size: 23pt;
+  margin-top:35px;
+}
 a { border:1px silver inset; margin-left: 20px;padding: 2px;}
 </style>
 
+</style>
 </head>
-<body><h1>UKRAINE TRIP 2017</h1>
-<div>
-Who wants to come? <select>
+<body>
+  <body><h1>UKRAINE TRIP 2017</h1>
+  <div class="firstDiv">
+    <img src="http://bgfons.com/upload/flag_texture611.jpg";>
+  </div>
+  <img id ="sunflower" src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcR7abEv3ldEI1z-5yemKfBiLHpDiSsN-9yBRgDyAiUmmOohAjOLAw";>
+  <h3 class="date">Pick a date<h3>
+  <form>
+    <input id="datepicker" />
+  </form>
+  <h3 class="activities">Activities</h3>
+  <div class="dropdown">
+    <button>activities</button>
+    <div class="dropdown-content">
+      <p>Explore the Dnepr River</p>
+      <p>Visit Saint Sophia's Cathedral</p>
+      <p>Eat real Ukranian cuisine</p>
+      <p>Learn Russian/Ukranian</p>
+    </div>
+  </div>
+
+  <div class="people">
+<strong>Who wants to come?</strong> <select>
 <option></option>
 <option>Bruce and Sara</option>
 <option>Elias and Sadie</option>
@@ -25,18 +131,14 @@ Who wants to come? <select>
 <option>Jeff</option>
 </select>
 </div>
-<div>
-Pick a date: 
-</div>
-<div>
-Search Airfare:
+<div class="people">
+<strong>Search Airfare:</strong>
 <a href="https://www.skyscanner.com" target="_blank">Skyscanner</a>
 </div>
-<div>
-Search Lodging:
-<a href="https://www.airbnb.com/" target="_blank">AirBnBr</a>
+<div class="people">
+<strong>Search Lodging:</strong>
+<a href="https://www.airbnb.com/" target="_blank">AirBnB</a>
 </div>
-<div>
-Activities:
-</div>
-</body></html>
+
+  </body>
+</html>
